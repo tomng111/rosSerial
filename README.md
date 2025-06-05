@@ -1,4 +1,7 @@
 # ROS2 Humble
+This is a fork of the original code from docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html, with some changes.<br />
+The main idea starting from the famous rosserial-ROS1 (wiki.ros.org/rosserial), which I love and the subscriber part of the Humble tutorial.<br />
+An Arduino Mega board is used as the hardware where the blinking LED is actually happening.<br /><br />
 ROS2 Humble - Arduino Mega 2560.<br />
 ## Essential commands<br />
 ### Project
@@ -7,17 +10,14 @@ ROS2 Humble - Arduino Mega 2560.<br />
 - `ros2 run py_pubsub seriel`<br />
 ### Arduino
 - `sudo chmod a+rw /dev/<your_port>`<br />
-## Structure<br /> 
-- py_pubsub<br />
-  - __init__.py
-  - subscriber_member_function.py
-- resource<br />
-  - py_subhub
-- test<br />
-  - test_copyright.py
-  - test_flake8.py
-  - test_pep257.py
-- LICENSE<br />
-- package.xml<br />
-- setup.cfg<br />
-- setup.py<br />
+## Notes from the Tutorial<br /> 
+### package.xml
+After the lines above, add the following dependencies corresponding to your node’s import statements:<br />
+- `<exec_depend>rclpy</exec_depend>`<br />
+- `<exec_depend>std_msgs</exec_depend>`<br />
+### setup.cfg
+The contents of the setup.cfg file should be correctly populated automatically, like so:<br />
+- `[develop]`<br />
+- `script_dir=$base/lib/py_pubsub`<br />
+- `[install]`<br />
+- `install_scripts=$base/lib/py_pubsub`<br />
