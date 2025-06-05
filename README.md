@@ -1,6 +1,6 @@
 # ROS2 Humble
-This is a fork of the original code from docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html, with some changes.<br />
-The main idea starting from the famous rosserial-ROS1 (wiki.ros.org/rosserial), which I love and the subscriber part of the Humble tutorial.<br />
+This is a fork of the original code from <ins>docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html</ins>, with some changes.<br />
+The main idea starting from the famous rosserial-ROS1 (<ins>wiki.ros.org/rosserial</ins>), which I love and the subscriber part of the Humble tutorial.<br />
 An Arduino Mega board is used as the hardware where the blinking LED is actually happening.<br /><br />
 ROS2 Humble - Arduino Mega 2560.<br />
 ## Essential commands<br />
